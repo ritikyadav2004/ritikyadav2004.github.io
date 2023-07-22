@@ -1,0 +1,159 @@
+/* CSS Reset */
+
+/* Reset margin, padding, and border to a consistent baseline */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+    /* Recommended box model */
+}
+
+/* Optionally, apply a global font and font size */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Reset list styles */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Optionally, reset anchor styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Optionally, remove any default underlines on links */
+a:hover {
+    text-decoration: none;
+}
+
+/* Optionally, reset heading styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+/* Optionally, set a default background color */
+body {
+    background-color: #bad8fa;
+}
+
+/* End CSS Reset */
+
+/* Begin Page Styles */
+
+/* Apply a natural box layout model to all elements, but allowing components to change */
+
+
+/* Optionally, hide the overflow of components */
+nav {
+    overflow: hidden;
+    background: rgb(139, 132, 252);
+    background: linear-gradient(90deg, rgba(139, 132, 252, 1) 0%, rgb(13, 164, 214) 27%, rgba(152, 175, 228, 1) 92%);
+    padding: 1rem;
+    box-shadow: 5px 5px 10px #acacac,
+        -5px -5px 10px cornflowerblue;
+}
+
+.logo {
+    font-weight: 500;
+    font-size: 2rem;
+    display: inline-block;
+    margin-left: 20px;
+
+}
+
+.menu {
+    display: inline;
+}
+
+.menu ul {
+    float: right;
+    margin-right: 20px;
+    display: inline-flex;
+}
+
+li {
+    margin: 1rem;
+}
+
+li:hover {
+    transition: 0.4s;
+    color: rgb(103, 238, 215);
+}
+
+.main{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px #acacac,
+        -5px -5px 10px cornflowerblue;
+}
+
+.main header{
+    color: rgb(94, 94, 94);
+    padding: 0.25rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.main .toolcode{
+    color: #acacac;
+    padding: 0.5rem 2rem;
+}
+
+i {
+    padding: 0.5rem;
+}
+.related{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px #acacac,
+        -5px -5px 10px cornflowerblue;
+}
+.related div{
+    width: 33%;
+    padding: 0.5rem;
+    text-align: center;
+}
+.related li, .related .rel-title{
+    color: black;
+}
+
+.rel-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+
+
+footer {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 49%, rgba(0, 212, 255, 1) 100%);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+}

@@ -1,0 +1,491 @@
+/* CSS Reset */
+
+/* Reset margin, padding, and border to a consistent baseline */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+
+    /* Recommended box model */
+}
+
+/* Optionally, apply a global font and font size */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+
+/* Optionally, reset anchor styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Optionally, remove any default underlines on links */
+a:hover {
+    text-decoration: none;
+}
+
+/* Optionally, reset heading styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+/* Optionally, set a default background color */
+body {
+    background-color: #f0f0f0;
+}
+
+/* End CSS Reset */
+
+/* Begin Page Styles */
+
+/* Apply a natural box layout model to all elements, but allowing components to change */
+
+
+/* Optionally, hide the overflow of components */
+nav {
+    overflow: hidden;
+    background: rgb(139, 132, 252);
+    background: linear-gradient(90deg, rgba(139, 132, 252, 1) 0%, rgb(13, 164, 214) 27%, rgba(152, 175, 228, 1) 92%);
+    padding: 1rem;
+    box-shadow: 5px 5px 10px #acacac,
+        -5px -5px 10px cornflowerblue;
+    color: #ffffff;
+}
+
+.logo {
+    font-weight: 500;
+    font-size: 2rem;
+    display: inline-block;
+    margin-left: 20px;
+
+}
+
+.menu {
+    display: inline;
+}
+
+.menu ul {
+    float: right;
+    margin-right: 20px;
+    display: inline-flex;
+}
+
+.menu li {
+    margin: 1rem;
+}
+
+li:hover {
+    transition: 0.4s;
+    color: rgb(103, 238, 215);
+}
+
+.main {
+    display: flex;
+    margin: 1rem 3rem;
+
+}
+
+.herothings {
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.main-img {
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+}
+
+.main h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.main p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.main ul {
+    margin-left: 3rem;
+    list-style: square;
+}
+
+.main .btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    background-color: #fff;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1rem;
+    border: 1px solid #000;
+    display: inline-block;
+
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1rem;
+    text-align: center;
+
+
+}
+
+.team{
+    margin: 1rem 3rem;
+}
+
+.team header {
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.team header h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.team header p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.card {
+    width: 30%;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: rgb(108, 217, 150);
+    background: -moz-radial-gradient(circle, rgba(108, 217, 150, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(108, 217, 150, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background: radial-gradient(circle, rgba(108, 217, 150, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6cd996", endColorstr="#94bbe9", GradientType=1);
+
+}
+
+.card-container .card img {
+    width: 100%;
+    height: 100%;
+    scale: 0.8;
+    border-radius: 15rem;
+    border: 4px solid rgba(172, 172, 184, 0.445);
+}
+
+.cardmy {
+    background-color: rgba(0, 255, 255, 0.199);
+}
+
+.card-content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card:hover {
+    background: rgb(108, 217, 150);
+    background: -moz-linear-gradient(148deg, rgb(56, 61, 58) 0%, rgba(113, 214, 130, 1) 8%, rgba(138, 195, 206, 1) 63%, rgba(146, 189, 229, 1) 95%, rgba(148, 187, 233, 1) 100%);
+    background: -webkit-linear-gradient(148deg, rgba(108, 217, 150, 1) 0%, rgba(113, 214, 130, 1) 8%, rgba(138, 195, 206, 1) 63%, rgba(146, 189, 229, 1) 95%, rgba(148, 187, 233, 1) 100%);
+    background: linear-gradient(148deg, rgba(108, 217, 150, 1) 0%, rgba(113, 214, 130, 1) 8%, rgba(138, 195, 206, 1) 63%, rgba(146, 189, 229, 1) 95%, rgba(148, 187, 233, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6cd996", endColorstr="#94bbe9", GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6cd996", endColorstr="#94bbe9", GradientType=1);
+    transition: 1s;
+    color: azure;
+
+
+
+}
+
+.card h3:hover {
+    padding-left: 1rem;
+    transition: 0.5s;
+}
+
+.card p:hover {
+    padding-right: 1rem;
+    transition: 0.5s;
+
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.main .btn:hover {
+    background-color: #000;
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+i {
+    padding: 0.5rem;
+}
+
+.fa-facebook-f {
+    color: #0045db;
+}
+
+.fa-github {
+    color: black;
+}
+
+.fa-instagram {
+    color: rgb(241, 65, 94);
+}
+
+.related {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px #acacac,
+        -5px -5px 10px cornflowerblue;
+}
+
+.related div {
+    width: 33%;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.related li,
+.related .rel-title {
+    color: black;
+}
+
+.rel-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+
+
+footer {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 49%, rgba(0, 212, 255, 1) 100%);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+}
+
+/* media Queriees */
+
+/* for Mobile */
+
+@media only screen and (max-width: 600px) {
+    .main {
+        flex-direction: column-reverse;
+    }
+
+    .main-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .main h1 {
+        font-size: 1.5rem;
+    }
+
+    .main p {
+        font-size: 1rem;
+    }
+
+    .main ul {
+        margin-left: 0;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card-container .card img {
+        width: 100%;
+        height: 100%;
+        scale: 0.8;
+        border-radius: 15rem;
+        border: 4px solid rgba(172, 172, 184, 0.445);
+    }
+
+    .card-content {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .card:hover {
+        background: rgb(108, 217, 150);
+        background: -moz-linear-gradient(148deg, rgb(56, 61, 58) 0%, rgba(113, 214, 130, 1) 8%, rgba(138, 195, 206, 1) 63%, rgba(146, 189, 229, 1) 95%, rgba(148, 187, 233, 1) 100%);
+        background: -webkit-linear-gradient(148deg, rgba(108, 217, 150, 1) 0%, rgba(113, 214, 130, 1) 8%, rgba(138, 195, 206, 1) 63%, rgba(146, 189, 229, 1) 95%, rgba(148, 187, 233, 1) 100%);
+        background: linear-gradient(148deg, rgba(108, 217, 150, 1) 0%, rgba(113, 214, 130, 1) 8%, rgba(138, 195, 206, 1) 63%, rgba(146, 189, 229, 1) 95%, rgba(148, 187, 233, 1) 100%);
+
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6cd996", endColorstr="#94bbe9", GradientType=1);
+        transition: 1s;
+        color: azure;
+    }
+
+    .card h3:hover {
+        padding-left: 1rem;
+        transition: 0.5s;
+    }
+
+    .card p:hover {
+        padding-right: 1rem;
+        transition: 0.5s;
+    }
+
+    .card h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .main .btn:hover {
+        background-color: #000;
+        color: #fff;
+        transition: 0.5s;
+    }
+
+    .related {
+        flex-direction: column;
+    }   
+
+    .related div {
+        width: 100%;
+    }
+
+    .related li,
+    .related .rel-title {
+        color: black;
+    }
+
+    .rel-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 0.5rem;
+    }
+
+    .logo {
+        font-weight: 500;
+        font-size: 1.5rem;
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    .menu {
+        display: inline;
+    }
+
+    .menu ul {
+        float: right;
+        margin-right: 20px;
+        display: inline-flex;
+    }
+
+    .menu li {
+        margin: 1rem;
+    }
+
+    li:hover {
+        transition: 0.4s;
+        color: rgb(103, 238, 215);
+    }
+
+    .herothings {
+        padding: 2rem;
+        margin: 2rem;
+    }
+
+    .main h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    .main p {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+
+    .main ul {
+        margin-left: 3rem;
+        list-style: square;
+    }
+
+    .main .btn {
+        padding: 0.5rem 1rem;
+        border-radius: 0.2rem;
+        background-color: #fff;
+        color: #000;
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 1rem;
+        border: 1px solid #000;
+        display: inline-block;
+    }
+
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 1rem;
+        text-align: center;
+    }
+
+    .team header {
+        text-align: center;
+        margin: 0.5rem;
+    }
+
+
+    .team header h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .team header p {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+
+    footer{
+        position: relative;
+    }
+
+    footer p{
+        font-size: 0.8rem;
+    }
+
+    footer .footer-bottom{
+        padding: 10px 0;        color: #fff;
+        text-align: center;
+    }
+
+
+}
